@@ -223,8 +223,11 @@ Semaine 10 Finalisation, README, justifications des modules, préparation de la 
 ### Restrictions des LLM
 
 RPM	Requests per minute --> pas trop limitant, source de latence
+
 RPD	Requests per day --> limitant ⚠️
+
 TPM	Tokens per minute --> --> pas trop limitant, source de latence
+
 TPD Tokens per days --> limitant ⚠️
 
 ### Utilisation estimée 
@@ -232,12 +235,15 @@ TPD Tokens per days --> limitant ⚠️
 Supposons large:
 
 Petite équipe / démo : 10 à 20 utilisateurs
+
 100 requêtes par jours 
 
 ### Estimation taille d'une requête
 
 Prompt (instructions + mutation) : 200 à 500 tokens
+
 Contexte (RAG) : 500 à 2 000 tokens
+
 Résultat (explication) : 200 à 600 tokens
 
 Total par requête : 1000 à 3000 tokens soit 
@@ -245,8 +251,11 @@ Total par requête : 1000 à 3000 tokens soit
 ### Ressources requises pour le projet 
 
 300000 tokens par jour
+
 100 requêtes par jours
+
 3000 tokens par minutes si on veut 1 requête par minute
+
 1 requête par minute
 
 ### options 1 : utiliser le tier gratuit d'une API 
@@ -258,9 +267,13 @@ Exemple Groq (!!! ⚠️ Pas Grok d'Elon Musk https://groq.com/blog/hey-elon-its
 </p>
 
 Modele llama-3.1-8b-instant :
+
 30 requêtes par minutes
+
 14.4K requêtes par jours 	
+
 6K tokens par minutes -- > 2 requêtes par minutes
+
 500K tokens par jours --> 166 requêtes de 3000 tokens par jours
 
 Le plan gratuit de groq devrait suffire.
